@@ -20,6 +20,7 @@
         h1 {
             font-size: 42px;
             color: #00e5ff;
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -39,7 +40,7 @@
         .card {
             background: #1d2935;
             margin: 15px auto;
-            padding: 20px;
+            padding: 25px;
             max-width: 400px;
             border-radius: 15px;
         }
@@ -51,12 +52,36 @@
             padding: 10px 15px;
             margin: 5px;
             border-radius: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background: #00e5ff;
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.8;
         }
 
         a {
-            color: #00e5ff;
             text-decoration: none;
-            font-size: 18px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: #00c853;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-weight: bold;
         }
 
         footer {
@@ -69,66 +94,185 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
+
         <h1>Hi, I'm a Web Developer 🚀</h1>
 
         <p>
             1st Year CSE Student | Learning Web Development
         </p>
-    </header>
-
-    <section>
-        <h2>About Me 👨‍💻</h2>
 
         <p>
-            I am a first-year CSE student learning
-            HTML, CSS and JavaScript.
-            My goal is to become a Software Engineer.
+            Building websites using HTML, CSS and JavaScript.
         </p>
-    </section>
+
+    </header>
+
+
+    <!-- ABOUT -->
 
     <section>
+
+        <h2>About Me 👨‍💻</h2>
+
+        <div class="card">
+
+            <p>
+                I am a first-year CSE student learning
+                Web Development.
+            </p>
+
+            <p>
+                I enjoy building websites and JavaScript
+                projects using my mobile.
+            </p>
+
+            <p>
+                My goal is to become a Software Engineer.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section>
+
         <h2>My Skills 🛠️</h2>
 
         <div class="card">
+
             <span class="skill">HTML</span>
+
             <span class="skill">CSS</span>
+
             <span class="skill">JavaScript</span>
+
             <span class="skill">GitHub</span>
+
         </div>
+
     </section>
 
+
+    <!-- PROJECTS -->
+
     <section>
+
         <h2>My Projects 🚀</h2>
 
-        <div class="card">
-            <h3>Calculator 🧮</h3>
-            <p>
-                A calculator built using HTML, CSS and JavaScript.
-            </p>
-        </div>
+
+        <!-- CALCULATOR -->
 
         <div class="card">
-            <h3>To-Do List 📝</h3>
+
+            <h3>Calculator 🧮</h3>
+
             <p>
-                A simple task management website using JavaScript.
+                A calculator built using
+                HTML, CSS and JavaScript.
             </p>
+
+            <a
+                href="https://lakshminaidu495-bit.github.io/my-calculator/"
+                target="_blank">
+
+                <button>
+                    Live Calculator
+                </button>
+
+            </a>
+
         </div>
+
+
+        <!-- TODO LIST -->
+
+        <div class="card">
+
+            <h3>To-Do List 📝</h3>
+
+            <p>
+                A simple task management website
+                built using JavaScript.
+            </p>
+
+            <a
+                href="https://lakshminaidu495-bit.github.io/my-calculator/todo.html"
+                target="_blank">
+
+                <button>
+                    Live To-Do List
+                </button>
+
+            </a>
+
+        </div>
+
+
+        <!-- GITHUB -->
+
+        <div class="card">
+
+            <h3>My GitHub 💻</h3>
+
+            <p>
+                Check my coding projects and
+                development work.
+            </p>
+
+            <a
+                href="https://github.com/lakshminaidu495-bit"
+                target="_blank">
+
+                <button>
+                    View GitHub
+                </button>
+
+            </a>
+
+        </div>
+
     </section>
+
+
+    <!-- CONTACT -->
 
     <section>
-        <h2>Contact 📧</h2>
+
+        <h2>Contact Me 📧</h2>
 
         <div class="card">
-            <p>Email: your-lakshminaidu495@gmail.com</p>
-            <a href="https://github.com/">
-                My GitHub
+
+            <p>
+                Interested in my work?
+            </p>
+
+            <a
+                href="mailto:YOUR_EMAIL_HERE"
+                class="contact-btn">
+
+                Email Me 📩
+
             </a>
+
         </div>
+
     </section>
 
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 My Portfolio</p>
+
+        <p>
+            © 2026 My Portfolio | Built with HTML, CSS & JavaScript 🚀
+        </p>
+
     </footer>
 
 </body>
