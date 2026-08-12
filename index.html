@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculator</title>
+
+    <style>
+        body {
+            background: #101820;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: auto;
+            background: #1d2935;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #display {
+            width: 100%;
+            height: 60px;
+            font-size: 28px;
+            text-align: right;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            font-size: 22px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .operator {
+            background: #00e5ff;
+        }
+
+        .clear {
+            background: #ff5252;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Calculator 🧮</h1>
+
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <br>
+
+        <button onclick="clearDisplay()" class="clear">C</button>
+        <button onclick="addToDisplay('(')">(</button>
+        <button onclick="addToDisplay(')')">)</button>
+        <button onclick="addToDisplay('/')" class="operator">÷</button>
+
+        <br>
+
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button onclick="addToDisplay('*')" class="operator">×</button>
+
+        <br>
+
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button onclick="addToDisplay('-')" class="operator">−</button>
+
+        <br>
+
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button onclick="addToDisplay('+')" class="operator">+</button>
+
+        <br>
+
+        <button onclick="addToDisplay('0')">0</button>
+        <button onclick="addToDisplay('.')">.</button>
+        <button onclick="calculate()" class="operator">=</button>
+
+    </div>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+
+        function calculate() {
+            let expression =
+                document.getElementById("display").value;
+
+            try {
+                document.getElementById("display").value =
+                    Function("return " + expression)();
+            }
+            catch {
+                document.getElementById("display").value = "Error";
+            }
+        }
+    </script>
+
+</body>
+</html>
