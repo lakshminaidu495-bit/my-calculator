@@ -5,22 +5,18 @@
 
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
             background: #101820;
             color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
-        }
-
-        header {
-            padding: 60px 20px;
-            background: #1d2935;
+            margin: 0;
+            padding: 30px 15px;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 40px;
+            margin-top: 50px;
             color: #00e5ff;
-            margin-bottom: 10px;
         }
 
         h2 {
@@ -29,12 +25,172 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.6;
         }
 
-        section {
+        .card {
+            background: #1d2935;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .skills {
+            background: #1d2935;
             padding: 20px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #00e5ff;
+            color: black;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00c853;
+            color: white;
+            text-decoration: none;
+            padding: 14px 22px;
+            margin: 8px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #1d2935;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Portfolio 🚀</h1>
+
+    <p>
+        I am learning Web Development using only my mobile.
+    </p>
+
+    <div class="card">
+
+        <h2>About Me 👨‍💻</h2>
+
+        <p>
+            I am a first-year CSE student learning
+            Web Development.
+        </p>
+
+        <p>
+            My goal is to become a Software Engineer.
+        </p>
+
+    </div>
+
+
+    <h2>My Skills 🛠️</h2>
+
+    <div class="skills">
+
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">GitHub</span>
+
+    </div>
+
+
+    <h2>My Projects 🚀</h2>
+
+
+    <div class="card">
+
+        <h3>🧮 Calculator</h3>
+
+        <p>
+            A calculator built using HTML,
+            CSS and JavaScript.
+        </p>
+
+        <a
+            class="btn"
+            href="https://lakshminaidu495-bit.github.io/my-calculator/"
+            target="_blank">
+
+            Live Calculator
+
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>📝 To-Do List</h3>
+
+        <p>
+            A simple task management website
+            built using JavaScript.
+        </p>
+
+        <a
+            class="btn"
+            href="https://lakshminaidu495-bit.github.io/my-todo-list/"
+            target="_blank">
+
+            Live To-Do List
+
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>💻 GitHub</h3>
+
+        <p>
+            Check out my coding projects.
+        </p>
+
+        <a
+            class="btn"
+            href="https://github.com/lakshminaidu495-bit"
+            target="_blank">
+
+            View GitHub
+
+        </a>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 My Portfolio
+        </p>
+
+    </footer>
+
+
+</body>
+</html>            padding: 20px;
         }
 
         .card {
