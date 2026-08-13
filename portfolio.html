@@ -1,23 +1,32 @@
-  
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nadupuru Sai Charan - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nadupuru Sai Charan | Portfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background: #101820;
             color: white;
-            font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 30px 15px;
+        }
+
+        header {
+            padding: 60px 20px 40px;
         }
 
         h1 {
-            font-size: 38px;
-            margin-top: 40px;
+            font-size: 40px;
             color: #00e5ff;
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -26,45 +35,48 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
         }
 
-        .card {
-            background: #1d2935;
-            max-width: 500px;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 18px;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
 
-        .skills {
+        .about,
+        .skills,
+        .project {
             background: #1d2935;
-            padding: 20px;
+            margin: 20px 0;
+            padding: 25px;
             border-radius: 18px;
-            max-width: 500px;
-            margin: 20px auto;
         }
 
         .skill {
             display: inline-block;
             background: #00e5ff;
-            color: black;
-            padding: 10px 15px;
+            color: #101820;
+            padding: 10px 16px;
             margin: 5px;
             border-radius: 20px;
             font-weight: bold;
         }
 
+        .project h3 {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+
         .btn {
             display: inline-block;
+            margin-top: 12px;
+            padding: 13px 22px;
             background: #00c853;
             color: white;
             text-decoration: none;
-            padding: 14px 22px;
-            margin: 8px;
             border-radius: 10px;
-            font-size: 16px;
             font-weight: bold;
         }
 
@@ -74,7 +86,7 @@
 
         footer {
             margin-top: 50px;
-            padding: 20px;
+            padding: 25px;
             background: #1d2935;
         }
     </style>
@@ -82,131 +94,139 @@
 
 <body>
 
-    <h1>Welcome to My Portfolio 🚀</h1>
-
-    <p>
-        Hi, I am <strong>Nadupuru Sai Charan</strong>.
-    </p>
-
-    <p>
-        I am a first-year CSE student learning Web Development.
-    </p>
-
-
-    <div class="card">
-
-        <h2>About Me 👨‍💻</h2>
+    <header>
+        <h1>NADUPURU SAI CHARAN</h1>
 
         <p>
-            I am interested in Web Development and Software Engineering.
-            I enjoy building practical projects and learning new technologies.
+            First-Year CSE Student | Web Development Learner
         </p>
-
-    </div>
-
-
-    <h2>My Skills 🛠️</h2>
-
-    <div class="skills">
-
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">GitHub</span>
-
-    </div>
+    </header>
 
 
-    <h2>My Projects 🚀</h2>
+    <div class="container">
+
+        <section class="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hi, I am Nadupuru Sai Charan.
+                I am a first-year CSE student interested in
+                Web Development and Software Engineering.
+            </p>
+
+            <p>
+                I enjoy building websites and learning
+                new technologies through practical projects.
+            </p>
+
+        </section>
 
 
-    <!-- Calculator -->
+        <section class="skills">
 
-    <div class="card">
+            <h2>Skills</h2>
 
-        <h3>🧮 Calculator</h3>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">GitHub</span>
 
-        <p>
-            A functional calculator built using HTML,
-            CSS and JavaScript.
-        </p>
-
-        <a
-            class="btn"
-            href="https://lakshminaidu495-bit.github.io/my-calculator/"
-            target="_blank">
-
-            Live Calculator
-
-        </a>
-
-    </div>
+        </section>
 
 
-    <!-- To-Do List -->
-
-    <div class="card">
-
-        <h3>📝 To-Do List</h3>
-
-        <p>
-            A simple task management web application
-            built using HTML, CSS and JavaScript.
-        </p>
-
-        <a
-            class="btn"
-            href="https://lakshminaidu495-bit.github.io/my-todo-list/"
-            target="_blank">
-
-            Live To-Do List
-
-        </a>
-
-    </div>
+        <h2>My Projects</h2>
 
 
-    <!-- Quiz App -->
+        <!-- PROJECT 1 -->
 
-    <div class="card">
+        <section class="project">
 
-        <h3>🧠 Quiz App</h3>
+            <h3>🧮 Calculator</h3>
 
-        <p>
-            An interactive quiz application with
-            multiple-choice questions and score tracking.
-        </p>
+            <p>
+                A functional calculator built using
+                HTML, CSS and JavaScript.
+            </p>
 
-        <a
-            class="btn"
-            href="https://lakshminaidu495-bit.github.io/my-quiz-app/"
-            target="_blank">
+            <a
+                class="btn"
+                href="https://lakshminaidu495-bit.github.io/my-calculator/"
+                target="_blank">
 
-            Live Quiz App
+                Open Calculator
 
-        </a>
+            </a>
 
-    </div>
+        </section>
 
 
-    <!-- GitHub -->
+        <!-- PROJECT 2 -->
 
-    <div class="card">
+        <section class="project">
 
-        <h3>💻 GitHub</h3>
+            <h3>📝 To-Do List</h3>
 
-        <p>
-            Check out my coding projects and repositories.
-        </p>
+            <p>
+                A simple task management application
+                built using HTML, CSS and JavaScript.
+            </p>
 
-        <a
-            class="btn"
-            href="https://github.com/lakshminaidu495-bit"
-            target="_blank">
+            <a
+                class="btn"
+                href="https://lakshminaidu495-bit.github.io/my-todo-list/"
+                target="_blank">
 
-            View GitHub
+                Open To-Do List
 
-        </a>
+            </a>
+
+        </section>
+
+
+        <!-- PROJECT 3 -->
+
+        <section class="project">
+
+            <h3>🧠 Quiz App</h3>
+
+            <p>
+                An interactive quiz application with
+                multiple-choice questions and score tracking.
+            </p>
+
+            <a
+                class="btn"
+                href="https://lakshminaidu495-bit.github.io/my-quiz-app/"
+                target="_blank">
+
+                Open Quiz App
+
+            </a>
+
+        </section>
+
+
+        <!-- GITHUB -->
+
+        <section class="project">
+
+            <h3>💻 GitHub</h3>
+
+            <p>
+                Check my coding projects and repositories.
+            </p>
+
+            <a
+                class="btn"
+                href="https://github.com/lakshminaidu495-bit"
+                target="_blank">
+
+                Open GitHub
+
+            </a>
+
+        </section>
 
     </div>
 
@@ -214,7 +234,7 @@
     <footer>
 
         <p>
-            © 2026 Nadupuru Sai Charan
+            © 2026 NADUPURU SAI CHARAN
         </p>
 
     </footer>
